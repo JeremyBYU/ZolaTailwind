@@ -1,0 +1,11 @@
+{
+  "name": "zolatailwind",
+  "version": "0.0.1",
+  "description": "Example Repo of using Zola and Tailwind",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeremy Castagno",
+  "license": "MIT"
+}
