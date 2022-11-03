@@ -1,5 +1,8 @@
 public
+static/styles
+.DS_Store
 
+.DS
 # Logs
 logs
 *.log
