@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="prose">
+  <h1>
+    {{ page.title }} 
+  </h1>
+</section>
+
+<div class="grid grid-cols-3 gap-4 mt-4 justify-center">
+
+  {% for i in [1, 2, 3, 4, 5, 6] -%}
+    {% set image = resize_image(path="images/moon.jpg", width=240, height=180) %}
+    <div>
+      <img src="{{image.url}}" class="rounded shadow-lg" />
+
+    </div>
+  {%- endfor %}
+
+</div>
+
+{% endblock content %}

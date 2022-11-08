@@ -14,3 +14,22 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
+
+
+# Menu items, this will make an array
+[[extra.menu]]
+name = "Home"
+url = "/"
+
+[[extra.menu]]
+name = "Blog"
+url = "blog"
+
+[[extra.menu]]
+name = "Projects"
+url = "projects"
+
+
+[[extra.menu]]
+name = "Speaking"
+url = "speaking"
