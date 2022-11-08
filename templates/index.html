@@ -1,12 +1,24 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section class="prose max-w-none prose-lg prose-slate">
-  <h1 class="">
-    This is my blog made with Zola.
-  </h1>
-  <p>
-      Here are all the <a href="/blog">blogs</a>
-  </p>
+<section class="">
+  <div class="grid grid-cols-2">
+    <div class="flex flex-col prose max-w-none prose-lg prose-slate">
+      <h1>
+        Explore Space
+      </h1>
+      <p class="prose prose-zinc">A website dedicated to the exploration of space</p>
+    </div>
+    <div>
+      <img  src="https://cdn.vox-cdn.com/thumbor/Myh_jNi1ySbd0LXL2HBWEk7z5gA=/0x0:2048x1186/2820x1586/filters:focal(861x430:1187x756):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/71100133/web_first_images_release.0.png" alt="">
+    </div>
+
+  </div>
+  <div class="prose prose-lg mt-8">
+    <h2 >To Infinity and Beyond</h2>
+  </div>
+
+
+
 </section>
 {% endblock content %}
