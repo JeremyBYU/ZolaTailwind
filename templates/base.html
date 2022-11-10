@@ -8,12 +8,15 @@
 
   <body class="flex h-full flex-col bg-zinc-50">
     <div>
+      <!-- Creates the white center background -->
       <div class="fixed inset-0 flex justify-center sm:px-8">
         <div class="flex w-full max-w-7xl lg:px-8">
           <div class="w-full bg-white ring-1 ring-zinc-100"></div>
         </div>
       </div>
+      <!-- Contains all content inside the white center of the page -->
       <div class="relative">
+        <!-- Contains the top header and navigation -->
         <header class="pointer-events-none relative z-50 flex flex-col h-16">
           <div class="top-0 z-10 h-16 pt-6" style="position: sticky">
             <div class="sm:px-8 top-0 w-full">
@@ -101,10 +104,12 @@
           </div>
         </header>
 
+        <!-- Contains the main content -->
         <main>
-          <div class="mt-8 sm:mt-28"></div>
-          <div class="mx-auto max-w-7xl">
-            <div class="px-16">{% block content %} {% endblock %}</div>
+          <!-- Container for all the main content-->
+          <div class="mx-auto max-w-7xl sm:mt-28">
+            <!-- All content will go inside the the block content -->
+            <div class="sm:px-16 lg:px-20 md:px-18">{% block content %} {% endblock %}</div>
           </div>
         </main>
       </div>

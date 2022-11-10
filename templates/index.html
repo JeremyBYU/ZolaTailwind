@@ -1,15 +1,18 @@
 {% extends "base.html" %}
+<!-- This is our homepage, index.html
+It extends the base.html -->
 
+<!-- Everything inside this block tags will be inserted into the base.html block tag -->
 {% block content %}
-<section class="">
-  <div class="grid grid-cols-2">
-    <div class="flex flex-col prose max-w-none prose-lg prose-slate">
-      <h1>
+<section>
+  <div class="grid md:grid-cols-3 sm:grid-cols-1 gap-2">
+    <div class="col-span-1 flex flex-col prose max-w-none prose-lg prose-slate">
+      <h1 class="mb-5">
         Explore Space
       </h1>
       <p class="prose prose-zinc">A website dedicated to the exploration of space</p>
     </div>
-    <div>
+    <div class="col-span-2">
       <img  src="https://cdn.vox-cdn.com/thumbor/Myh_jNi1ySbd0LXL2HBWEk7z5gA=/0x0:2048x1186/2820x1586/filters:focal(861x430:1187x756):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/71100133/web_first_images_release.0.png" alt="">
     </div>
 
